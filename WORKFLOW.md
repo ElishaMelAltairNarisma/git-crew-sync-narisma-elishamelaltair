@@ -29,4 +29,20 @@
 
 ## Screenshot Proof
 
-![Task 4 Rebase Proof](screenshots/)
+### Task 1 Screenshot
+![Task 1 Proof](screenshots/Task1.jpg)
+
+### Task 2 Screenshot
+![Task 2 Proof](screenshots/Task2.jpg)
+
+### Task 3 Screenshot
+![Task 3 Proof](screenshots/Task3.jpg)
+
+### Task 4 Screenshot
+![Task 4 Proof](screenshots/Task4.jpg)
+
+### Task 5 Screenshot
+![Task 5 Proof](screenshots/Task5.jpg)
+
+### Task 6 Screenshot
+![Task 6 Proof](screenshots/Task6.jpg)

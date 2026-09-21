@@ -46,3 +46,17 @@
 
 ### Task 6 Screenshot
 ![Task 6 Proof](screenshots/Task6.jpg)
+
+## Workflow Reflection Questions
+
+### 1. What did the rejected push error message tell you, and why did it happen?
+The error message (`! [rejected] - fetch first`) indicated that the remote branch contained commits that did not exist in my local branch. This happened because another clone (Clone B) pushed new commits to `origin/feature/overtime-pay` while my local workspace (Clone A) was behind, causing the two histories to diverge.
+
+### 2. What's the actual difference between how you resolved Task 3 (merge) vs Task 4 (rebase)?
+In Task 3, `git merge` created a new 3-way merge commit that joined both branch histories together, preserving the exact chronological sequence of both clones. In Task 4, `git rebase` temporarily stashed my local commits, updated my base branch to match `origin/feature/overtime-pay`, and then replayed my local commits on top of it, creating a linear project history without extra merge commits.
+
+### 3. What one habit would have avoided both rejected pushes in this lab?
+Running `git fetch` (or `git pull`) to pull remote changes before starting new work or attempting to make local commits and pushes would have prevented both rejected push errors.
+
+### 4. Which approach — merge or rebase — would you default to on a shared team branch, and why?
+I would default to `git merge` on a shared team branch (or use pull requests) because rebasing rewrites commit history. Rewriting history on public shared branches can cause synchronization issues for other developers pulling from the same branch.
